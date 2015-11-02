@@ -1,9 +1,7 @@
 var path    = require('path');
 var debug   = require('debug');
 var config  = require('config');
-// koa
-var koa       = require('koa');
-var routeify  = require('koa-routeify');
+var koa     = require('koa');
 
 /**
  * [function description]
@@ -41,7 +39,6 @@ Kanary.prototype.use = function(extension){
  * @return {[type]}      [description]
  */
 Kanary.prototype.start = function(callback){
-  this.app.use(routeify(this.app));
   this.app.listen(this.options.port, callback);
   return this;
 };

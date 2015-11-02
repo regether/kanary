@@ -1,6 +1,6 @@
 {
   "name": "kanary",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "the next full-featured javascript frameworks",
   "main": "index.js",
   "repository": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "config": "latest",
     "debug": "latest",
-    "koa": "latest",
+    "koa": "1.1.1",
     "koa-routeify": "latest"
   }
 }
