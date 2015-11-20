@@ -3,6 +3,10 @@
   "version": "1.0.3",
   "description": "the next full-featured javascript frameworks",
   "main": "index.js",
+  "bin": "./bin/kanary.sh",
+  "scripts": {
+    "init": "./node_modules/.bin/kanary init"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/song940/kanary.git"
@@ -18,9 +22,6 @@
   },
   "homepage": "https://github.com/song940/kanary#readme",
   "dependencies": {
-    "config": "latest",
-    "debug": "latest",
-    "koa": "1.1.1",
-    "koa-routeify": "latest"
+    "debug": "latest"
   }
 }

@@ -19,6 +19,14 @@ app.start(function(){
 
 ````
 
+
+```bash
+kanary install kanary-session
+kanary install kanary-logger
+kanary install kanary-session
+kanary install kanary-session
+```
+
 ### API
 
 - use
