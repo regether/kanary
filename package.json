@@ -1,22 +1,22 @@
 {
-  "name": "kanary",
-  "version": "1.0.1",
+  "name": "persian",
+  "version": "0.0.1",
   "description": "the next full-featured javascript frameworks",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/song940/kanary.git"
+    "url": "git+https://github.com/regether/kanary.git"
   },
   "keywords": [
     "koa",
     "es6"
   ],
-  "author": "lsong",
+  "author": "严伟庆",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/song940/kanary/issues"
+    "url": "https://github.com/regether/kanary/issues"
   },
-  "homepage": "https://github.com/song940/kanary#readme",
+  "homepage": "https://github.com/regether/kanary#readme",
   "dependencies": {
     "config": "latest",
     "debug": "latest",
