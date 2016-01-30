@@ -1,17 +1,17 @@
-## Kanary ![npm](https://badge.fury.io/js/kanary.png)
+## Persian
 
-the next full-featured javascript frameworks
+the next full-featured javascript frameworks, base from [Kanary](https://github.com/song940/kanary)
 
 ### Installation
 ````
-$ npm install kanary --save
+$ npm install persian --save
 ````
 
 ### Example
 ````javascript
-const Kanary = require('kanary');
+const Persian = require('Persian');
 
-const app =  Kanary();
+const app =  Persian();
 
 app.start(function(){
   console.log('server is running .');
