@@ -4,15 +4,15 @@ var config  = require('config');
 // koa
 var koa       = require('koa');
 
-var Persian = function(options){
-  if(!(this instanceof Persian)){
-    return new Persian(options);
+var Meow = function(options){
+  if(!(this instanceof Meow)){
+    return new Meow(options);
   }
   this.options = options || config;
   this.app = koa();
 };
 
-Persian.prototype.load = function(extension) {
+Meow.prototype.load = function(extension) {
   let middleware;
   if(typeof extension === 'string') {
     debug('')("Load Extension: " + extension);
@@ -39,17 +39,17 @@ Persian.prototype.load = function(extension) {
   return this;
 };
 
-Persian.prototype.start = function(callback) {
+Meow.prototype.start = function(callback) {
   this.app.listen(this.options.port, callback);
   return this;
 };
 
-Persian.Controller = function() {
+Meow.Controller = function() {
   return this;
 };
 
-Persian.Controller.prototype.send = function(body) {
+Meow.Controller.prototype.send = function(body) {
   this.ctx.body = body;
 };
 
-module.exports = Persian;
+module.exports = Meow;

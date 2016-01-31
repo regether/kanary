@@ -1,6 +1,6 @@
 {
-  "name": "persian",
-  "version": "0.0.2",
+  "name": "koa-meow",
+  "version": "0.0.1",
   "description": "the next full-featured javascript frameworks",
   "main": "index.js",
   "repository": {
@@ -11,7 +11,7 @@
     "koa",
     "es6"
   ],
-  "author": "严伟庆",
+  "author": "yanweiqing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/regether/kanary/issues"
