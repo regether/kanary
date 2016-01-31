@@ -1,17 +1,17 @@
-## Persian
+## Meow
 
 the next full-featured javascript frameworks, base from [Kanary](https://github.com/song940/kanary)
 
 ### Installation
 ````
-$ npm install persian --save
+$ npm install koa-meow --save
 ````
 
 ### Example
 ````javascript
-const Persian = require('Persian');
+const Meow = require('koa-meow');
 
-const app =  Persian();
+const app =  Meow();
 
 app.start(function(){
   console.log('server is running .');
