@@ -1,17 +1,17 @@
-## Meow
+## Salt
 
 the next full-featured javascript frameworks, base from [Kanary](https://github.com/song940/kanary)
 
 ### Installation
 ````
-$ npm install koa-meow --save
+$ npm install koa-salt --save
 ````
 
 ### Example
 ````javascript
-const Meow = require('koa-meow');
+const Salt = require('koa-salt');
 
-const app =  Meow();
+const app = Salt();
 
 app.start(function(){
   console.log('server is running .');

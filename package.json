@@ -1,11 +1,11 @@
 {
-  "name": "koa-meow",
+  "name": "koa-salt",
   "version": "0.0.1",
   "description": "the next full-featured javascript frameworks",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/regether/kanary.git"
+    "url": "git+https://github.com/regether/koa-salt.git"
   },
   "keywords": [
     "koa",
@@ -14,9 +14,9 @@
   "author": "yanweiqing",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/regether/kanary/issues"
+    "url": "https://github.com/regether/koa-salt/issues"
   },
-  "homepage": "https://github.com/regether/kanary#readme",
+  "homepage": "https://github.com/regether/koa-salt#readme",
   "dependencies": {
     "config": "latest",
     "debug": "latest",
