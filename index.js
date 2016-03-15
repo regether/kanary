@@ -13,7 +13,7 @@ var Salt = function(options){
 };
 
 Salt.prototype.load = function(extension) {
-  let middleware;
+  var middleware;
   if(typeof extension === 'string') {
     debug('')("Load Extension: " + extension);
     try {
