@@ -1,8 +1,7 @@
-var path    = require('path');
-var debug   = require('debug');
+var path = require('path');
+var debug = require('debug');
 var config  = require('config');
-// koa
-var koa       = require('koa');
+var koa = require('koa');
 
 var Salt = function(options){
   if(!(this instanceof Salt)){
@@ -10,6 +9,10 @@ var Salt = function(options){
   }
   this.options = options || config;
   this.app = koa();
+};
+
+Salt.Controller = function() {
+  return this;
 };
 
 Salt.prototype.load = function(extension) {
@@ -41,10 +44,6 @@ Salt.prototype.load = function(extension) {
 
 Salt.prototype.start = function(callback) {
   this.app.listen(this.options.port, callback);
-  return this;
-};
-
-Salt.Controller = function() {
   return this;
 };
 

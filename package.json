@@ -1,7 +1,7 @@
 {
   "name": "koa-salt",
-  "version": "0.0.2",
-  "description": "the next full-featured javascript frameworks",
+  "version": "0.0.3",
+  "description": "The next full-featured javascript frameworks",
   "main": "index.js",
   "repository": {
     "type": "git",
