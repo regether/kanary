@@ -15,24 +15,24 @@ Salt.Controller = function() {
   return this;
 };
 
-Salt.prototype.load = function(extension) {
+Salt.prototype.load = function(tool) {
   var middleware;
-  if(typeof extension === 'string') {
-    debug('')("Load Extension: " + extension);
+  if(typeof tool === 'string') {
+    debug('')("Load Middlewares: " + tool);
     try {
-      extension = require(path.join(this.options.path.extensions, extension));
+      tool = require(path.join(this.options.path.middlewares, tool));
     } catch (err) {
       if (err.code !== 'MODULE_NOT_FOUND') {
         throw err;
       }
-      extension = require(path.join(extension));
+      tool = require(path.join(tool));
     }
   }
 
-  if (extension.constructor.name === 'GeneratorFunction') {
-    middleware = extension;
+  if (tool.constructor.name === 'GeneratorFunction') {
+    middleware = tool;
   } else {
-    middleware = extension(this.app, this.options);
+    middleware = tool(this.app, this.options);
   }
 
   if(middleware) {
