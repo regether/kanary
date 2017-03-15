@@ -1,14 +1,14 @@
 var path = require('path');
 var debug = require('debug');
 var config  = require('config');
-var koa = require('koa');
+var Koa = require('koa');
 
 var Salt = function(options){
   if(!(this instanceof Salt)){
     return new Salt(options);
   }
   this.options = options || config;
-  this.app = koa();
+  this.app = new Koa();
 };
 
 Salt.Controller = function() {
